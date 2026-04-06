@@ -10,7 +10,7 @@
   },
   components: {
     gateway: {
-      manifest: "https://raw.githubusercontent.com/RDI-Foundation/agentbeats-gateway/refs/tags/v0.1/amber-manifest.json5",
+      manifest: "https://raw.githubusercontent.com/RDI-Foundation/agentbeats-gateway/refs/tags/v0.3/amber-manifest.json5",
       config: {
         assessment_config: {
           dataset_url: "https://raw.githubusercontent.com/databricks/officeqa/6aa8c32/officeqa.csv",
@@ -44,8 +44,7 @@
   },
   bindings: [
     { to: "#gateway.green", from: "#green.a2a" },
-    { to: "#gateway.purple1", from: "#purple_agent.a2a" },
-    { to: "#green.proxy", from: "#gateway.proxy", weak: true, name: "green-proxy" }
+    { to: "#gateway.purple1", from: "#purple_agent.a2a" }
   ],
   exports: { results: "#gateway.results" }
 }
