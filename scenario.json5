@@ -22,9 +22,6 @@
         participant_roles: {
           green: "evaluator",
           purple1: "officeqa_agent"
-        },
-        callback_urls: {
-          green: "${bindings.green-proxy.url}"
         }
       }
     },
