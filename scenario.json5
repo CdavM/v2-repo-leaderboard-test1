@@ -41,7 +41,8 @@
   },
   bindings: [
     { to: "#gateway.green", from: "#green.a2a" },
-    { to: "#gateway.purple1", from: "#purple_agent.a2a" }
+    { to: "#gateway.purple1", from: "#purple_agent.a2a" },
+    { to: "#green.proxy", from: "#gateway.proxy", weak: true }
   ],
   exports: { results: "#gateway.results" }
 }
