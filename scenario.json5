@@ -44,5 +44,11 @@
     { to: "#gateway.purple1", from: "#purple_agent.a2a" },
     { to: "#green.proxy", from: "#gateway.proxy", weak: true }
   ],
-  exports: { results: "#gateway.results" }
+  exports: { results: "#gateway.results" },
+  metadata: {
+    agentbeats_ids: {
+      evaluator: "your-green-agent-id",
+      officeqa_agent: "purple-agent-id"
+    }
+  }
 }
